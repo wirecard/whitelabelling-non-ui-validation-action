@@ -1,0 +1,12 @@
+name: 'Run non-ui tests for whitelabelled extension'
+description: 'Run non-ui tests for whitelabelled extension'
+inputs:
+  action:
+    description: 'Choose type of test: test_files_and_github or test_emails'
+    required: true
+    default: 'test_files_and_github'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.action }}

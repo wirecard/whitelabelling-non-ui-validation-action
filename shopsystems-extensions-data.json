@@ -1,0 +1,14 @@
+{
+  "woocommerce-ee":
+    {
+      "images_folder_name": "images",
+      "readme_file": "README.md",
+      "license_file": "LICENSE",
+      "changelog_file":"CHANGELOG.md",
+      "max_release_asset_size": "5242880"
+
+    },
+    "magento2":
+    {
+    }
+}
