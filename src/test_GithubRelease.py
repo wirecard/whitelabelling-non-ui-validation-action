@@ -15,6 +15,9 @@ class TestGithubRelease(TestCase):
                                                                         GithubHelper.get_last_release_tag(self.workspace))
         self.data_list = FileActionHelper.get_extension_file_data(self.extension)
 
+    def test_release_notes_exist(self):
+        self.assertTrue(GithubHelper.release_notes_exist(self.github_release_info_link))
+
     def test_release_notes_contain_codeword(self):
         self.assertFalse(GithubHelper.release_notes_contain_codeword(self.github_release_info_link,
                                                                      Constants.WIRECARD))
