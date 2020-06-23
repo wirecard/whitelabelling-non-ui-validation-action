@@ -1,8 +1,8 @@
 #!/bin/sh -l
 
-cp -r /usr/bin/src/ /github/workspace/
-cp -r /usr/bin/*json /github/workspace/src
-export PYTHONPATH=/scripts/
+cp -r /usr/bin/src/ $GITHUB_WORKSPACE/
+cp -r /usr/bin/*.json $GITHUB_WORKSPACE/src
+export PYTHONPATH=$GITHUB_WORKSPACE/
 export PYTHONUNBUFFERED=1
 TEST_TYPE=$1
 
