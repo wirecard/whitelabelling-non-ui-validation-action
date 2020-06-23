@@ -20,4 +20,6 @@ class CurlHelper:
         crl.perform()
         crl.close()
         get_body = b_obj.getvalue()
+        print("getting info from {} \n".format(link))
+        print("received: {} \n".format(get_body.decode('utf8')))
         return get_body.decode('utf8')
