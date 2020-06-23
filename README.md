@@ -45,7 +45,6 @@ jobs:
          TOKEN: ${{ secrets.SHOP_SYSTEM_BOT }}
 ```
 - Running locally
-
 ```
 
 docker build . -t white
