@@ -21,7 +21,7 @@ class GithubHelper:
     def release_notes_exist(release_link):
         release_json = GithubHelper.get_github_release_info(release_link)
         release_notes = release_json[Constants.GITHUB_RELEASE_BODY]
-        return release_notes is None
+        return release_notes is not None
 
     @staticmethod
     def release_notes_contain_codeword(release_link, codeword):
