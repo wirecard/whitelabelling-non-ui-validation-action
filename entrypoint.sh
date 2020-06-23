@@ -8,7 +8,7 @@ TEST_TYPE=$1
 
 if [ "${TEST_TYPE}" = "test_files_and_github" ]; then
   echo "Running tests"
-  cd /github/workspace/src
+  cd /github/workspace
   python -m unittest src.test_Files.TestFiles
   python -m unittest src.test_GithubRelease.TestGithubRelease
 else
