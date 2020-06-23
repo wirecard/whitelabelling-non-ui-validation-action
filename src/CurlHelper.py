@@ -16,7 +16,7 @@ class CurlHelper:
         crl.setopt(crl.URL, link)
         crl.setopt(crl.WRITEDATA, b_obj)
         crl.setopt(pycurl.VERBOSE, 1)
-        crl.setopt(pycurl.HTTPHEADER, ['Authorization: token {}'.format(os.getenv("GITHUB_TOKEN"))])
+        crl.setopt(pycurl.HTTPHEADER, ['Authorization: token {}'.format(os.getenv("TOKEN"))])
         crl.perform()
         crl.close()
         get_body = b_obj.getvalue()
