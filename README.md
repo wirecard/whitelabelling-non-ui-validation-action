@@ -7,7 +7,7 @@ This is pytest based test suite. Each `test_*` class contains set of validation 
 - With parameter `action` =  `test_files_and_github`
     - Perform "file" based checks
     - Perform check of release on private repository 
-- With parameter `test_emails_after_ui_tests`
+- With parameter `action` = `test_emails_after_ui_tests`
    - TBD
 
 # How to setup
