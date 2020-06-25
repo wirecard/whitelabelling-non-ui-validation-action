@@ -14,6 +14,7 @@ class TestGithubRelease(TestCase):
         self.github_release_info_link = "{}/{}/releases/tags/{}".format(Constants.GITHUB_API_LINK, self.repo_slug,
                                                                         GithubHelper.get_last_release_tag(self.workspace))
         self.data_list = FileActionHelper.get_extension_file_data(self.extension)
+        print("Running Github release related tests")
 
     def test_release_notes_exist(self):
         self.assertTrue(GithubHelper.release_notes_exist(self.github_release_info_link))

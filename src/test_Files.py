@@ -10,6 +10,7 @@ class TestFiles(TestCase):
         self.extension = os.getenv("EXTENSION")
         self.workspace = os.getenv("GITHUB_WORKSPACE")
         self.data_list = FileActionHelper.get_extension_file_data(self.extension)
+        print("Runninng file related tests")
 
     def test_readme_file(self):
         self.assertFalse(FileActionHelper.file_contains_code_word(
